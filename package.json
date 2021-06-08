@@ -8,6 +8,7 @@
   "private": true,
   "scripts": {
     "build": "webpack",
+    "watch": "webpack --watch",
     "start": "webpack --mode development"
   },
   "devDependencies": {

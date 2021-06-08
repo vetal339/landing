@@ -1,0 +1,31 @@
+*{
+  font-family: DM Sans;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+body{
+  max-width: 1922px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+}
+.img_bg{
+  position: absolute;
+  max-width: 1922px;
+  width: 100%;
+}
+ul{
+  list-style-type: none;
+}
+ li {
+  position: relative;
+  display: inline;
+  padding: 0 32px 0 0;
+}
+li a{
+  color: $font-color-white;
+  text-decoration: none;
+}

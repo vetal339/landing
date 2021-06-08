@@ -1,7 +1,13 @@
-$font-size: 10rem;
-$font-color: red;
+@import "./src/style/mixin_&_varibles/mixin";
+@import "./src/style/mixin_&_varibles/varibles";
+@import "./src/fonts/DMSans-Medium.ttf";
+@import "../style/ general/general";
+@import "../style/header/header";
+@import "../style/rewards/container_reward";
+@import "../style/ourProcess/ourProcess";
+@import "../style/brand/brands";
 
-html {
-  font-size: $font-size;
-  color: $font-color;
-}
+
+
+
+
