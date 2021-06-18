@@ -9,7 +9,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack --mode development"
+    "start": "webpack serve --open"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",

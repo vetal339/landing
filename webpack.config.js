@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
 
 module.exports = {
-
+  mode: 'development',
   entry: {
     main: path.resolve(__dirname, './src/index.js'),
   },
@@ -11,9 +11,15 @@ module.exports = {
     path: path.resolve(__dirname, './build'),
     filename: '[name].js',
   },
+  devServer: {
+    before: (app, server) => {
+      app.get('/', (req, res) => {
+        res.sendFile(path.resolve(__dirname, './build/main.html'));
+      });
+    },
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'webpack Boilerplate',
       template: path.resolve(__dirname, './src/index.html'), // шаблон
       filename: 'main.html', // название выходного файла
     }),
@@ -47,12 +53,5 @@ module.exports = {
         ],
       },
     ],
-  },
-  mode: 'development',
-  devServer: {
-    historyApiFallback: true,
-    hot: true,
-    port: 8080,
-  },
-
+  }
 }

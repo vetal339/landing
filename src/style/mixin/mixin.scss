@@ -1,0 +1,32 @@
+@import "../varibles/varibles";
+
+@mixin desktop {
+  @media only screen and (max-width: #{$desktop - 1px}) {
+    @content;
+  }
+}
+@mixin ipad {
+  @media only screen and (max-width: #{$ipad - 1px}) {
+    @content;
+  }
+}
+@mixin ipad-min {
+  @media only screen and (max-width: #{$ipad-min - 1px}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (max-width: #{$tablet - 1px}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media only screen and (max-width: #{$mobile - 1px}) {
+    @content;
+  }
+}
+@mixin mobile-min {
+  @media only screen and (max-width: #{$mobile-min - 1px}) {
+    @content;
+  }
+}
